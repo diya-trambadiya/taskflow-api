@@ -30,6 +30,10 @@ app.delete("/tasks/:id", (req, res) => {
   res.json({ message: "Task deleted successfully" });
 });
 
+app.get("/login", (req, res) => {
+  res.send("Admin Login");
+});
+
 app.listen(3000, () => {
   console.log("TaskFlow API running on port 3000");
 });
